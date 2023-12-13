@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.App {
+  background-color: rgb(167, 201, 98);
+}
+
+.img-section img{
+  width: 100vw;
+  z-index: inherit;
+  position: relative;
+}
