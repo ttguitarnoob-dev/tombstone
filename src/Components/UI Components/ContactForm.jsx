@@ -36,7 +36,7 @@ export default function ContactForm() {
             console.log('pooooo')
             // const parsedJournal = await createdJournal.json()
             console.log('created?', createdContact)
-            navigate("/")
+            navigate("/success")
             return createdContact
 
 

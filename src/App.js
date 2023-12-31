@@ -7,6 +7,7 @@ import Services from "./Components/Pages/Services";
 import ContactForm from "./Components/UI Components/ContactForm";
 import Contact from "./Components/Pages/Contact";
 import About from "./Components/Pages/About"
+import Success from "./Components/Pages/Success";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="/Services" element={<Services />} />
       <Route path="/Contact" element={<Contact />} />
       <Route path="/About" element={<About />} />
+      <Route path="/success" element={<Success />} />
     </Routes>
 </div>
 </NextUIProvider>
