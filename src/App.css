@@ -30,7 +30,7 @@
   /* min-width: 70vw; */
   width: 100%;
   max-width: 500px;
-  padding: 2rem;
+  margin-bottom: 1rem;
 }
 
 .title {
