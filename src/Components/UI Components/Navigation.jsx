@@ -43,11 +43,11 @@ export default function Navigation() {
                         Contact
                     </Link>
                 </NavbarItem>
-                <NavbarItem>
+                {/* <NavbarItem>
                     <Link color="foreground" href="/Gallery">
                         Gallery
                     </Link>
-                </NavbarItem>
+                </NavbarItem> */}
             </NavbarContent>
             <NavbarMenu>
                 {menuItems.map((item, index) => (

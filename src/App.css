@@ -15,8 +15,30 @@
 
 .nav-logo {
   margin-top: 3rem;
+  margin-left: 2rem;
 }
 
 .section-bg {
   background-color: rgb(225, 149, 234);
+}
+
+.text-paragraph {
+  min-width: 30vw;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.home-bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 3rem;
+  color: rgb(245, 239, 222);
 }

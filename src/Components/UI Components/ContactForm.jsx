@@ -12,7 +12,7 @@ export default function ContactForm() {
             </div>
             <div className="flex w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-4">
                 <Input type="phone" label="Phone Number" />
-                <Input type="text" label="Graveyard City Location" />
+                <Input type="text" label="Graveyard Location" />
             </div>
             <Textarea
                 label="How Can We Help?"
