@@ -33,6 +33,13 @@ export default function Services() {
             imgPath={Photos}
             />
 
+            <InfoSection 
+            text="Scrubbed down with soapy water then sealed with Renaissance Wax Polish to help protect against the elements! Suggest doing annually.  "
+            title="Bronze Plaques"
+            bgColor="linear-gradient(283deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
+            imgPath="https://www.crbronzeworks.com/wp-content/gallery/custom-bronze-grave-markers/Allens.jpg"
+            />
+
         </section>
     )
 }
