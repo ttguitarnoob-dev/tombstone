@@ -4,11 +4,19 @@
 
 
 .App {
-  background-color: rgb(167, 201, 98);
+  background-color: rgb(33, 33, 33);
 }
 
 .img-section img{
   width: 100vw;
   z-index: inherit;
   position: relative;
+}
+
+.nav-logo {
+  margin-top: 3rem;
+}
+
+.section-bg {
+  background-color: rgb(225, 149, 234);
 }

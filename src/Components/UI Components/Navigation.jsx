@@ -1,5 +1,6 @@
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
 import { useState } from "react";
+import Logo from "../../Images/Logo.webp"
 
 
 export default function Navigation() {
@@ -14,14 +15,15 @@ export default function Navigation() {
     ];
 
     return (
-        <Navbar isBordered onMenuOpenChange={setIsMenuOpen}>
+        <Navbar className="dark" height="8rem" isBordered onMenuOpenChange={setIsMenuOpen}>
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                     className="sm:hidden"
                 />
                 <NavbarBrand>
-                    <a href="/"><p className="font-bold text-inherit">KizziTomb</p></a>
+                    
+                    <a href="/"><p className="font-bold text-inherit"><img className="nav-logo" src={Logo} alt="logo" height="32"></img></p></a>
                 </NavbarBrand>
             </NavbarContent>
 
