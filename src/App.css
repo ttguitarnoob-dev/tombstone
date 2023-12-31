@@ -14,9 +14,10 @@
 }
 
 .nav-logo {
-  margin-top: 3rem;
-  margin-left: 2rem;
-  width: 40vw;
+  margin-top: 0;
+  margin-left: -10rem;
+  width: 30vw;
+  max-width: 128px;
 }
 
 .section-bg {
@@ -49,4 +50,11 @@
 
 .form-part {
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-logo {
+    margin-top: 0;
+    margin-left: 5rem;
+  }
 }

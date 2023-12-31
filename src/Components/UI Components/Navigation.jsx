@@ -1,6 +1,6 @@
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
 import { useState } from "react";
-import Logo from "../../Images/Logo.webp"
+import Logo from "../../Images/Logo.png"
 
 
 export default function Navigation() {
