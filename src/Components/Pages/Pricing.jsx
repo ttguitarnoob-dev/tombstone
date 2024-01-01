@@ -45,11 +45,14 @@ export default function Pricing() {
                 bgColor="linear-gradient(90deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
             />
 
-            <InfoSection
-                text="I partner with Memorial Pics, LLC to provide porcelain pictures for your memorials. Pictures range from $60 for basic to $300 for fancy bronze cover. Order through me and you'll get a great discount off the original retail. Includes post-installation photo"
-                title="Picture Addition"
-                bgColor="linear-gradient(90deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
-            />
+            
+            <div className="home-bio" style={{background: "linear-gradient(90deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"}}>
+                <div className="text-paragraph">
+                <h2 className="title font-medium text-5xl">Picture Addition</h2>
+                <p>I partner with <a style={{textDecoration: "underline"}} href="https://www.memorialpics.com" target="blank" >Memorial Pics, LLC</a> to provide porcelain pictures for your memorials. Pictures range from $60 for basic to $300 for fancy bronze cover. Order through me and you'll get a great discount off the original retail. Includes post-installation photo.</p>
+                </div>
+                
+            </div>
 
             <InfoSection
                 text="Flower order, delivery and placement starting at $40. Includes photo after placement."
