@@ -11,7 +11,7 @@ export default function Navigation() {
         "Services",
         "About",
         "Contact",
-        "Gallery"
+        "Pricing"
     ];
 
     return (
