@@ -9,7 +9,7 @@ export default function Contact() {
             
             
             <InfoSection
-                text="Looking to give your loved one's memorial some extra care? Majestic Monuments is here for you! Please reach out via the form below. "
+                text="Looking to give your loved one's memorial some extra care? Majestic Monuments is here for you! Please reach out via the form below to grab a quote or just ask a question. "
                 title="Contact"
                 bgColor="linear-gradient(90deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
                 imgPath={Filler}
