@@ -7,7 +7,7 @@ export default function InfoSection({ imgPath, bgColor, text, title, isFlipped }
             return (
                 <>
                     <div className="text-paragraph">
-                        {title && <h1 className="title font-medium text-5xl">{title}</h1>}
+                        {title && <h2 className="title font-medium text-5xl">{title}</h2>}
                         <p>{text}</p>
                     </div>
                     {imgPath && <div>
@@ -33,7 +33,7 @@ export default function InfoSection({ imgPath, bgColor, text, title, isFlipped }
                         />
                     </div>}
                     <div className="text-paragraph">
-                        {title && <h1 className="title font-medium text-5xl">{title}</h1>}
+                        {title && <h2 className="title font-medium text-5xl">{title}</h2>}
                         <p>{text}</p>
                     </div>
 

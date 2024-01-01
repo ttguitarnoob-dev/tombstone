@@ -43,6 +43,11 @@ export default function Navigation() {
                         Contact
                     </Link>
                 </NavbarItem>
+                <NavbarItem>
+                    <Link color="foreground" href="/Pricing">
+                        Pricing
+                    </Link>
+                </NavbarItem>
                
             </NavbarContent>
             <NavbarMenu>
