@@ -22,13 +22,13 @@ export default function Pricing() {
         </section>
         <section>
             <InfoSection
-                text="One-time visit ranging from $35.00 (single-plot grave marker) to $150.00 (large upright monuments). All with immediate before and after photos and a follow-up photo in 3 weeks (final results are not visible right away)."
+                text="One-time visit ranging from $50.00 (single-plot grave marker) to $150.00 (large upright monuments). All with immediate before and after photos and a follow-up photo in 3 weeks (final results are not visible right away)."
                 title="Headstones"
                 bgColor="linear-gradient(90deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
             />
 
             <InfoSection
-                text="One-time visit starting at $25 (single-plot grave marker). Immediate before and after photos."
+                text="One-time visit starting at $40 (single-plot grave marker). Immediate before and after photos."
                 title="Bronze Plaques"
                 bgColor="linear-gradient(90deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
             />
@@ -40,7 +40,7 @@ export default function Pricing() {
             />
 
             <InfoSection
-                text="Requires purchase of headstone cleaning services first. Addition of relettering service starting at $100."
+                text="Prerequisite for relettering is purchase of headstone cleaning services. Addition of relettering service starting at $100. Requires premium paint and several hours time."
                 title="Relettering"
                 bgColor="linear-gradient(90deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
             />
@@ -49,13 +49,13 @@ export default function Pricing() {
             <div className="home-bio" style={{background: "linear-gradient(90deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"}}>
                 <div className="text-paragraph">
                 <h2 className="title font-medium text-5xl">Picture Addition</h2>
-                <p>I partner with <a style={{textDecoration: "underline"}} href="https://www.memorialpics.com" target="blank" >Memorial Pics, LLC</a> to provide porcelain pictures for your memorials. Pictures range from $60 for basic to $300 for fancy bronze cover. Order through me and you'll get a great discount off the original retail. Includes post-installation photo.</p>
+                <p>I partner with <a style={{textDecoration: "underline"}} href="https://www.memorialpics.com" target="blank" >Memorial Pics, LLC</a> to provide porcelain pictures for your memorials. Pictures range from $100 for basic to $300 for fancy bronze cover. Order through me and you'll get a great discount off the original retail. Includes post-installation photo.</p>
                 </div>
                 
             </div>
 
             <InfoSection
-                text="Flower order, delivery and placement starting at $40. Includes photo after placement."
+                text="Pickup of prepaid floral arrangements, delivery and placement starting at $40. Includes photo after placement."
                 title="Floral Delivery and Placement"
                 bgColor="linear-gradient(90deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
             />

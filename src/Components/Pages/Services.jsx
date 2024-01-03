@@ -34,7 +34,7 @@ export default function Services() {
             />
 
             <InfoSection
-                text="Have a stone with fading letters? I can safely and carefully apply paint to have them vibrant again. Black and white lettering available. Headstone cleaning must be performed before relettering is possible."
+                text="Have a stone with fading letters? I can safely and carefully apply paint to have them vibrant again. Black and white lettering available. Headstone cleaning must be performed before relettering is possible. For Bronze, I will paint the background a brown leather color, and then polish the lettering and seal the whole thing."
                 title="Relettering"
                 bgColor="linear-gradient(283deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
                 imgPath={Relettering}
@@ -48,7 +48,7 @@ export default function Services() {
             />
 
             <InfoSection
-                text="Pick your own floral piece and I will pick it up, place it for you and send you a photo."
+                text="Choose and prepay for your own floral piece and I will pick it up, place it for you and send you a photo."
                 title="Flower Delivery and Placement"
                 bgColor="linear-gradient(283deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
                 imgPath="https://i.etsystatic.com/10673097/r/il/4d2d65/5354555832/il_fullxfull.5354555832_acr4.jpg"
