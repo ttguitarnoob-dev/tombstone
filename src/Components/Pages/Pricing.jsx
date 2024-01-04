@@ -57,7 +57,7 @@ export default function Pricing() {
             <div className="home-bio" style={{background: "linear-gradient(118deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"}}>
                 <div className="text-paragraph">
                 <h2 className="title font-medium text-5xl">Floral Delivery and Placement</h2>
-                <p>I partner with <a style={{textDecoration: "underline"}} href="https://www.bastropflorist.net" target="blank" >Bastrop Florist</a> to provide saddle flower arrangmeents. They have been in business since 1969 and "Best of Bastrop" Every year since 2003.  Silk flowers that will last 3-4 months. Prices range from $85-$150 for the flowers and you'll receive a discount if you order through me or mention my name. Pickup of prepaid floral arrangements, delivery and placement starting at $25. Includes photo after placement.</p>
+                <p>I partner with <a style={{textDecoration: "underline"}} href="https://www.bastropflorist.net" target="blank" >Bastrop Florist</a> to provide saddle flower arrangmeents. They have been in business since 1969 and "Best of Bastrop" every year since 2003.  Silk flowers that will last 3-4 months. Prices range from $85-$150 for the flowers and you'll receive a discount if you order through me or mention my name. Pickup of prepaid floral arrangements, delivery and placement starting at $25. Includes photo after placement.</p>
                 </div>
                 
             </div>
