@@ -17,40 +17,40 @@ export default function Services() {
             <InfoSection
                 text="Soft brushes, water, D/2 and nothing more! D/2 is a biological solution great at removing stains, algae, lichen, mold, mildew and air pollutants. This product works over time. Roughly two weeks after cleaning and applying, the headstone will be almost as good as new. Small, medium, large, I do it all! "
                 title="Headstone Cleaning"
-                bgColor="linear-gradient(90deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
+                bgColor="linear-gradient(310deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
                 imgPath={Cleaning}
             />
             <InfoSection
                 text="Scrubbed down with soapy water then sealed with Trewax Clear Paste Wax to help protect against the elements! Suggest doing annually.  "
                 title="Bronze Plaques"
-                bgColor="linear-gradient(283deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
+                bgColor="linear-gradient(118deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
                 imgPath="https://www.crbronzeworks.com/wp-content/gallery/custom-bronze-grave-markers/Allens.jpg"
             />
             <InfoSection
                 text="Same process as headstones for granite and marble benches."
                 title="Benches"
-                bgColor="linear-gradient(90deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
+                bgColor="linear-gradient(310deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
                 imgPath="https://images.squarespace-cdn.com/content/v1/5caa46c10b77bd3666d5b640/1560369228268-P86O4Q2P1BTKEOBQYL2O/Allen+1.JPG"
             />
 
             <InfoSection
                 text="Have a stone with fading letters? I can safely and carefully apply paint to have them vibrant again. Black and white lettering available. Headstone cleaning must be performed before relettering is possible. For Bronze, I will paint the background a brown leather color, and then polish the lettering and seal the whole thing."
                 title="Relettering"
-                bgColor="linear-gradient(283deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
+                bgColor="linear-gradient(118deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
                 imgPath={Relettering}
             />
 
             <InfoSection
                 text="Want to add a photo of your loved one? I partner with a company in San Antonio who provides high quality porcelain photos. Just send me your photo and I will place the order and install for free. Round, Oval, Rectangle or heart shapes available. "
                 title="Picture Addition"
-                bgColor="linear-gradient(90deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
+                bgColor="linear-gradient(310deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
                 imgPath={Photos}
             />
 
             <InfoSection
                 text="Choose and prepay for your own floral piece and I will pick it up, place it for you and send you a photo."
                 title="Flower Delivery and Placement"
-                bgColor="linear-gradient(283deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
+                bgColor="linear-gradient(118deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
                 imgPath="https://i.etsystatic.com/10673097/r/il/4d2d65/5354555832/il_fullxfull.5354555832_acr4.jpg"
             />
 

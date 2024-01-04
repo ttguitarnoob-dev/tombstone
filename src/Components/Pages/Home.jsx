@@ -13,7 +13,7 @@ export default function Home() {
             title="Headstone Cleaning Services In Bastrop County, Texas"
             text="Welcome to Majestic Monuments! If you have a memorial that needs attention in Bastrop County, Texas and surrounding counties, I'm your gal! Feel free to browse my services and get in touch if you have any questions. "
             imgPath={Logo}
-            bgColor="linear-gradient(90deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 68%, rgba(250,217,247,1) 100%)"
+            bgColor="linear-gradient(118deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
             />
             <ContactForm />
         </section>
