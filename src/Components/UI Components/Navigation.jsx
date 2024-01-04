@@ -15,7 +15,7 @@ export default function Navigation() {
     ];
 
     return (
-        <Navbar className="dark" height="8rem" onMenuOpenChange={setIsMenuOpen}>
+        <Navbar className="dark text-foreground" height="8rem" onMenuOpenChange={setIsMenuOpen}>
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
