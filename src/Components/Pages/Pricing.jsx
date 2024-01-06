@@ -28,7 +28,7 @@ export default function Pricing() {
             />
 
             <InfoSection
-                text="One-time visit starting at $40 (single-plot grave marker). Immediate before and after photos. Add refinishing service for $20."
+                text="One-time visit starting at $50 (single-plot grave marker). Immediate before and after photos. Add refinishing service for $20."
                 title="Bronze Plaques"
                 bgColor="linear-gradient(118deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
             />
