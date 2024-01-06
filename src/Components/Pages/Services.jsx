@@ -21,7 +21,7 @@ export default function Services() {
                 imgPath={Cleaning}
             />
             <InfoSection
-                text="Scrubbed down with soapy water then sealed with Trewax Clear Paste Wax to help protect against the elements! Suggest doing annually.  "
+                text="Scrubbed down with soapy water, letters and borders polished, then sealed with Trewax Clear Paste Wax to help protect against the elements. If you have a headstone that is beyond cleaning, I can refinish it with paint, polish and seal."
                 title="Bronze Plaques"
                 bgColor="linear-gradient(118deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
                 imgPath="https://www.crbronzeworks.com/wp-content/gallery/custom-bronze-grave-markers/Allens.jpg"
@@ -34,7 +34,7 @@ export default function Services() {
             />
 
             <InfoSection
-                text="Have a stone with fading letters? I can safely and carefully apply paint to have them vibrant again. Black and white lettering available. Headstone cleaning must be performed before relettering is possible. For Bronze, I will paint the background a brown leather color, and then polish the lettering and seal the whole thing."
+                text="Have a stone with fading letters? I can safely and carefully apply paint to have them vibrant again. Black and white lettering available. Headstone cleaning must be performed before relettering is possible."
                 title="Relettering"
                 bgColor="linear-gradient(118deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
                 imgPath={Relettering}

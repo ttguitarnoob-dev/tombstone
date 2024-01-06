@@ -28,7 +28,7 @@ export default function Pricing() {
             />
 
             <InfoSection
-                text="One-time visit starting at $40 (single-plot grave marker). Immediate before and after photos."
+                text="One-time visit starting at $40 (single-plot grave marker). Immediate before and after photos. Add refinishing service for $20."
                 title="Bronze Plaques"
                 bgColor="linear-gradient(118deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
             />
@@ -40,7 +40,7 @@ export default function Pricing() {
             />
 
             <InfoSection
-                text="Prerequisite for relettering is purchase of headstone cleaning services. Addition of relettering service starting at $100. Requires premium paint and several hours time."
+                text="Prerequisite for relettering is purchase of headstone cleaning services. Addition of relettering service starting at $50. Requires premium paint and several hours time."
                 title="Relettering"
                 bgColor="linear-gradient(118deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
             />
