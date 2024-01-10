@@ -9,6 +9,7 @@ import Contact from "./Components/Pages/Contact";
 import About from "./Components/Pages/About"
 import Success from "./Components/Pages/Success";
 import Pricing from "./Components/Pages/Pricing";
+import Gallery from "./Components/Pages/Gallery";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path="/Contact" element={<Contact />} />
       <Route path="/About" element={<About />} />
       <Route path="/Pricing" element={<Pricing />} />
+      <Route path="/Gallery" element={<Gallery />} />
       <Route path="/success" element={<Success />} />
     </Routes>
 </div>

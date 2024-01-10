@@ -2,6 +2,16 @@ import { Image } from "@nextui-org/react"
 
 export default function InfoSection({ imgPath, bgColor, text, title, isFlipped }) {
 
+    function backgroundColor() {
+        if (bgColor === 1){
+            return "linear-gradient(310deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
+        } else if (bgColor === 2) {
+            return "linear-gradient(118deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
+        } else {
+            return bgColor
+        }
+    }
+
     const DisplayOrder = () => {
         if (!isFlipped) {
             return (
@@ -44,7 +54,7 @@ export default function InfoSection({ imgPath, bgColor, text, title, isFlipped }
     }
 
     return (
-        <section className="home-bio" style={{ background: bgColor }}>
+        <section className="home-bio" style={{ background: backgroundColor() }}>
             <DisplayOrder />
         </section>
     )

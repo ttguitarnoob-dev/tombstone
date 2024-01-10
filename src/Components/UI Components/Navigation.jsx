@@ -11,7 +11,8 @@ export default function Navigation() {
         "Services",
         "About",
         "Contact",
-        "Pricing"
+        "Pricing",
+        "Gallery"
     ];
 
     return (
@@ -46,6 +47,11 @@ export default function Navigation() {
                 <NavbarItem>
                     <Link color="foreground" href="/Pricing">
                         Pricing
+                    </Link>
+                </NavbarItem>
+                <NavbarItem>
+                    <Link color="foreground" href="/Gallery">
+                        Gallery
                     </Link>
                 </NavbarItem>
                
