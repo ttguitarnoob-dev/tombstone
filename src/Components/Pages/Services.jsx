@@ -15,7 +15,7 @@ export default function Services() {
             </section>
             
             <InfoSection
-                text="Soft brushes, water, D/2 and nothing more! D/2 is a biological solution great at removing stains, algae, lichen, mold, mildew and air pollutants. This product works over time. Roughly two weeks after cleaning and applying, the headstone will be almost as good as new. Small, medium, large, I do it all! "
+                text="Soft brushes, water, and finished off with D/2 biological cleaner! D/2 is a biological solution great at removing stains, algae, lichen, mold, mildew and air pollutants. This product works over time. Roughly two weeks after cleaning and applying, the headstone will be almost as good as new. Small, medium, large, I do it all! "
                 title="Headstone Cleaning"
                 bgColor="linear-gradient(310deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
                 imgPath={Cleaning}
