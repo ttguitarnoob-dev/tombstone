@@ -37,6 +37,7 @@
 
 .title {
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .home-bio {
@@ -58,6 +59,27 @@
 .page-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 5rem;
+}
+
+.gallery-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: solid rgb(255, 255, 255) 1px;
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.image-frame{
+  padding: 1rem;
 }
 
 @media screen and (max-width: 600px) {

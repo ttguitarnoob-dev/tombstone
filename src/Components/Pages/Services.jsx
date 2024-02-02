@@ -2,6 +2,7 @@ import InfoSection from "../UI Components/InfoSection";
 import Cleaning from "../../Images/Cleaning.webp"
 import Relettering from "../../Images/Relettering.webp"
 import Photos from "../../Images/Photos.webp"
+import { Image } from "@nextui-org/react";
 
 export default function Services() {
 
@@ -12,6 +13,14 @@ export default function Services() {
                     <h1 className="page-title">Services</h1>
                     <p>I provide several different services.  Please explore below for more information.</p>
                 </div>
+                <div>
+                <Image
+                src="https://static.vecteezy.com/system/resources/previews/003/175/256/large_2x/bucket-with-foam-and-bubbles-linear-icon-vector.jpg"
+                alt="services"
+                width="200"
+                loading="lazy"
+                />
+            </div>
             </section>
             
             <InfoSection
