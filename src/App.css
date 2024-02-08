@@ -82,6 +82,28 @@
   padding: 1rem;
 }
 
+.banner-container{
+  margin: 0 auto;
+  border: 1px solid black;
+  /* border-radius: 5rem; */
+  width: 100%;
+  padding: 2rem;
+  background: rgb(87, 152, 93);
+  /* margin-top: 1rem; */
+  /* margin-bottom: 1rem; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-title{
+  font-size: 1.5rem;
+}
+
+.modal-subtitle{
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 600px) {
   .nav-logo {
     margin-top: 0;
