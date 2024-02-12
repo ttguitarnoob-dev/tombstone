@@ -1,5 +1,6 @@
 import InfoSection from "../UI Components/InfoSection";
 import { Image } from "@nextui-org/react"
+import Subscriptions from "../UI Components/Subscription";
 
 export default function Pricing() {
 
@@ -20,6 +21,22 @@ export default function Pricing() {
             </div>
            
         </section>
+        <Subscriptions
+        modalContent={[
+          { title: "Flowers", text: ["Subscriptions are available for fresh and silk flower arrangements!", `For fresh flowers we offer monthly subscriptions for $40. Total of 2 deliveries.`, `For silk flowers we offer 6 month subscriptions for $65. Total of 4 deliveries.`, `I order from Amazon, Etsy, Walmart, HEB or a local flower shop. Tell me what you're looking for, I'll shop around and send you a few options to pick from.  I'll get the order placed (you pay for the flowers and subscription up front) and delivered for you. Pictures provided every time. Contact for more information!`] },
+          {
+            title: "Headstones", text: [`General maintenance of Granite and Marble`, `Light clean and shine for mostly polished surfaced stones. Twice a month for 6 months. Before and after photos provided.`,
+              `Small- Single flat Marker $560 ($40 in savings)`,
+              `Medium- Single standing $790 ($50 in savings)`,
+              `Large- Companion or Larger Single standing $1,100 ($100 in savings)`]
+          },
+          {
+            title: "Bronze", text: [`Clean and seal with fresh wax once a month.`,
+              `6 month subscription- $300 ($60 in savings)`,
+              `1 year subscription- $620($100 in savings)`]
+          }
+        ]}
+      />
         <section>
             <InfoSection
                 text="One-time visit ranging from $50.00 (single-plot grave marker) to $150.00 (large upright monuments). All with immediate before and after photos and a follow-up photo in 3 weeks (final results are not visible right away)."
