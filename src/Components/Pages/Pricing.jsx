@@ -23,23 +23,24 @@ export default function Pricing() {
         </section>
         <Subscriptions
         modalContent={[
-          { title: "Flowers", text: ["Subscriptions are available for fresh and silk flower arrangements!", `For fresh flowers we offer monthly subscriptions for $40. Total of 2 deliveries.`, `For silk flowers we offer 6 month subscriptions for $65. Total of 4 deliveries.`, `I order from Amazon, Etsy, Walmart, HEB or a local flower shop. Tell me what you're looking for, I'll shop around and send you a few options to pick from.  I'll get the order placed (you pay for the flowers and subscription up front) and delivered for you. Pictures provided every time. Contact for more information!`] },
-          {
-            title: "Headstones", text: [`General maintenance of Granite and Marble`, `Light clean and shine for mostly polished surfaced stones. Twice a month for 6 months. Before and after photos provided.`,
-              `Small- Single flat Marker $560 ($40 in savings)`,
-              `Medium- Single standing $790 ($50 in savings)`,
-              `Large- Companion or Larger Single standing $1,100 ($100 in savings)`]
-          },
-          {
-            title: "Bronze", text: [`Clean and seal with fresh wax once a month.`,
-              `6 month subscription- $300 ($60 in savings)`,
-              `1 year subscription- $620($100 in savings)`]
-          }
+            { title: "Flowers", text: ["Subscriptions are available for fresh and silk flower arrangements!", `For fresh flowers we offer monthly subscriptions for $40 ($10 in savings). Total of 2 deliveries.`, `For silk flowers we offer 1 year subscriptions. Delivery every 2 months for a total of 6 deliveries for $120 ($20 in savings).`, `I order from Amazon, Etsy, Walmart, HEB or a local flower shop. Tell me what you're looking for, I'll shop around and send you a few options to pick from.  I'll get the order placed (you pay for the flowers and subscription up front) and delivered for you. Pictures provided every time. Contact for more information!`] },
+            {
+              title: "Headstones", text: [`General maintenance of Granite and Marble`, `Light clean and shine for mostly polished surfaced stones. Twice a month for 6 months. Before and after photos provided.`,
+                `Small- Single flat Marker $560 ($40 in savings)`,
+                `Medium- Single standing $1,150 ($50 in savings)`,
+                `Large- Companion or Larger Single standing $1,700 ($100 in savings)`]
+            },
+            {
+              title: "Bronze", text: [`Clean and seal with fresh wax once a month.`,
+                `6 month subscription - $300 ($50 in savings)`,
+                `1 year subscription - $520 ($100 in savings)`]
+            }
         ]}
       />
         <section>
             <InfoSection
-                text="One-time visit ranging from $50.00 (single-plot grave marker) to $150.00 (large upright monuments). All with immediate before and after photos and a follow-up photo in 3 weeks (final results are not visible right away)."
+                text="One-time visit ranging from $50.00 (single-plot grave marker) to $150.00 (large upright monuments). All with immediate before and after photos and a follow-up checkin and photo in 3 weeks. I offer a repeat customer discount. 15% off 2nd cleaning . 20% off 3rd and all future cleanings. 
+                Before and after photos provided. "
                 title="Headstones"
                 bgColor="linear-gradient(310deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
             />
