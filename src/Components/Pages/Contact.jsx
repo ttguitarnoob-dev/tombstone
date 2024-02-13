@@ -1,6 +1,4 @@
 import ContactForm from "../UI Components/ContactForm";
-import InfoSection from "../UI Components/InfoSection";
-import Filler from "../../Images/Filler.jpeg"
 import { Image } from "@nextui-org/react";
 
 export default function Contact() {

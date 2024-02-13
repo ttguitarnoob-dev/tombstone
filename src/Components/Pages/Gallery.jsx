@@ -1,4 +1,4 @@
-import InfoSection from "../UI Components/InfoSection";
+
 import Headstone1 from "../../Images/Headstone_before_after.webp"
 import Relettering from "../../Images/reletterinig.webp"
 import BronzeRefinish from "../../Images/bronze_before_after.webp"
