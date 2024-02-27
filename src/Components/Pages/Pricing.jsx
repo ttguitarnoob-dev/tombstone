@@ -39,7 +39,7 @@ export default function Pricing() {
       />
         <section>
             <InfoSection
-                text="One-time visit ranging from $50.00 (single-plot grave marker) to $150.00 (large upright monuments). All with immediate before and after photos and a follow-up checkin and photo in 3 weeks. I offer a repeat customer discount. 15% off 2nd cleaning . 20% off 3rd and all future cleanings. 
+                text="One-time visit ranging from $50.00 (single-plot grave marker) to $150.00 (large upright monuments). All with immediate before and after photos. I offer a repeat customer discount. 15% off 2nd cleaning . 20% off 3rd and all future cleanings. 
                 Before and after photos provided. "
                 title="Headstones"
                 bgColor="linear-gradient(310deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
