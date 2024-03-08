@@ -5,7 +5,7 @@
 
 
 .App {
-  background-color: rgb(245, 185, 247);
+  background-color: rgb(255, 255, 255);
 }
 
 .img-section img{
@@ -23,7 +23,7 @@
 }
 
 .section-bg {
-  background-color: rgb(225, 149, 234);
+  background-color: #e195ea;
   width: 100%;
   max-width: 900px;
 }

@@ -10,6 +10,7 @@ import About from "./Components/Pages/About"
 import Success from "./Components/Pages/Success";
 import Pricing from "./Components/Pages/Pricing";
 import Gallery from "./Components/Pages/Gallery";
+import Invoice from "./Components/Pages/Customer/Invoice";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path="/Pricing" element={<Pricing />} />
       <Route path="/Gallery" element={<Gallery />} />
       <Route path="/success" element={<Success />} />
+      <Route path="/invoices/:id" element={<Invoice />} />
     </Routes>
 </div>
 </NextUIProvider>
