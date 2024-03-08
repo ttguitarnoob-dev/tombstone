@@ -7,7 +7,7 @@ const Invoice = () => {
     function generatePDF() {
         const report = new jsPDF('portrait', 'pt', 'a4')
         report.html(document.querySelector('.invoice-container')).then(() => {
-            report.save(`Invoice - Majestic Monuments`)
+            report.save(`Invoice - Majestic Monuments - Jack Hays Statue San Marcos - 3/10/2024`)
         })
     }
 
@@ -47,7 +47,7 @@ const Invoice = () => {
                     {/* Invoice Details */}
                     <div style={{ flex: 1, padding: '10px' }}>
                         <div style={{ padding: '0.3rem', backgroundColor: '#e195ea', fontWeight: 'bold' }}>Invoice Details:</div>
-                        <div>Location: Statue</div>
+                        <div>Location: Jack Hays Statue</div>
                         <div>Date: 3/10/24</div>
                     </div>
                 </div>
@@ -57,6 +57,7 @@ const Invoice = () => {
                     <thead>
                         <tr style={{ backgroundColor: '#e195ea', fontWeight: 'bold' }}>
                             <th style={{ border: '1px solid black', padding: '8px', textAlign: 'left' }}>Service</th>
+                            <th style={{ border: '1px solid black', padding: '8px', textAlign: 'left' }}>Details</th>
                             <th style={{ border: '1px solid black', padding: '8px', textAlign: 'left' }}>Unit Price</th>
                         </tr>
                     </thead>
@@ -64,6 +65,7 @@ const Invoice = () => {
                         {/* Populate with line items */}
                         <tr>
                             <td style={{ border: '1px solid black', padding: '8px' }}>Custom Cleaning Job</td>
+                            <td style={{ border: '1px solid black', padding: '8px' }}>Clean , relettering and bronze plaque refinishing</td>
                             <td style={{ border: '1px solid black', padding: '8px' }}>$300.00</td>
                         </tr>
                         {/* Add more rows for additional items */}
@@ -78,7 +80,7 @@ const Invoice = () => {
 
                 {/* Footer */}
                 <div style={{ padding: '10px' }}>
-                    If you have any questions about this invoice, please reach out to Kizzi at email@example.com
+                    If you have any questions about this invoice, please reach out to Kizzi at <a style={{textDecoration: 'underline'}} href="mailto:majesticmonumentsbykizzi@yahoo.com">majesticmonumentsbykizzi@yahoo.com</a>
                 </div>
             </div>
             <Button onPress={generatePDF}>Save Invoice As PDF</Button>
