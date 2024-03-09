@@ -1,14 +1,45 @@
 import { Button } from "@nextui-org/button";
 import Logo from "../../../Images/Logo.png"
 import jsPDF from "jspdf";
+import { useEffect, useState } from "react";
+import { CircularProgress } from "@nextui-org/react";
+import { useParams } from "react-router";
 
 const Invoice = () => {
+    const [invoice, setInvoice] = useState()
+    const { id } = useParams()
 
     function generatePDF() {
         const report = new jsPDF('portrait', 'pt', 'a4')
         report.html(document.querySelector('.invoice-container')).then(() => {
             report.save(`Invoice - Majestic Monuments - Jack Hays Statue San Marcos - 3/10/2024`)
         })
+    }
+
+    async function handleFetch() {
+        const URL = `https://api.ttguitarnoob.cloud/invoices/${id}`
+
+        try {
+            console.log("fetching invoice at ", URL)
+            const response = await fetch(URL)
+            const data = await response.json()
+            setInvoice(data)
+            console.log(data)
+        } catch(err) {
+            console.log('something bad happened when fetching invoices', err)
+        }
+    }
+
+    useEffect(() => {
+        handleFetch()
+    }, [])
+
+    if (!invoice) {
+        return(
+            <section>
+                <CircularProgress color="secondary" label="Loading Invoice..." />
+            </section>
+        )
     }
 
     return (
@@ -39,35 +70,36 @@ const Invoice = () => {
                 <div style={{ display: 'flex', marginBottom: '20px' }}>
                     <div style={{ flex: 1, marginRight: '20px', padding: '10px' }}>
                         <div style={{ padding: '0.3rem', fontWeight: 'bold', backgroundColor: '#e195ea' }}>Bill To:</div>
-                        <div>Linda Coker</div>
-                        <div>Phone: </div>
-                        <div>Email: l_coker@hotmail.com</div>
+                        <div>{invoice.client}</div>
+                        <div>Phone: {invoice.phone}</div>
+                        <div>Email: {invoice.email}</div>
                     </div>
 
                     {/* Invoice Details */}
                     <div style={{ flex: 1, padding: '10px' }}>
                         <div style={{ padding: '0.3rem', backgroundColor: '#e195ea', fontWeight: 'bold' }}>Invoice Details:</div>
-                        <div>Location: Jack Hays Statue</div>
-                        <div>Date: 3/10/24</div>
+                        <div>Location: {invoice.job}</div>
+                        <div>Date: {new Date(invoice.date).toLocaleDateString()}</div>
                     </div>
                 </div>
 
                 {/* Line Item Table */}
+                        <p>Job Details: {invoice.jobDetails}</p>
                 <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '20px' }}>
                     <thead>
                         <tr style={{ backgroundColor: '#e195ea', fontWeight: 'bold' }}>
                             <th style={{ border: '1px solid black', padding: '8px', textAlign: 'left' }}>Service</th>
-                            <th style={{ border: '1px solid black', padding: '8px', textAlign: 'left' }}>Details</th>
-                            <th style={{ border: '1px solid black', padding: '8px', textAlign: 'left' }}>Unit Price</th>
+                            <th style={{ border: '1px solid black', padding: '8px', textAlign: 'left' }}>Service Price</th>
                         </tr>
                     </thead>
                     <tbody>
                         {/* Populate with line items */}
-                        <tr>
-                            <td style={{ border: '1px solid black', padding: '8px' }}>Custom Cleaning Job</td>
-                            <td style={{ border: '1px solid black', padding: '8px' }}>Clean , relettering and bronze plaque refinishing</td>
-                            <td style={{ border: '1px solid black', padding: '8px' }}>$300.00</td>
+                        {invoice.services && invoice.services.map((oneService) => (
+                            <tr>
+                            <td style={{ border: '1px solid black', padding: '8px' }}>{oneService.serviceName}</td>
+                            <td style={{ border: '1px solid black', padding: '8px' }}>${oneService.price}.00</td>
                         </tr>
+                        ))}
                         {/* Add more rows for additional items */}
                     </tbody>
                 </table>
@@ -75,7 +107,7 @@ const Invoice = () => {
                 {/* Thank you message */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px', marginBottom: '20px' }}>
                     <div>Thank you for your business!</div>
-                    <div style={{ textAlign: 'right', backgroundColor: 'lightblue', padding: '10px' }}>Total: $300.00</div>
+                    <div style={{ textAlign: 'right', backgroundColor: 'lightblue', padding: '10px' }}>Total: ${invoice.total}.00</div>
                 </div>
 
                 {/* Footer */}
