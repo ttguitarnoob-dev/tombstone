@@ -86,7 +86,7 @@ const Invoice = () => {
                 </div>
 
                 {/* Line Item Table */}
-                <p>Job Details: {invoice.jobDetails}</p>
+                <p className="p-5">Job Details: {invoice.jobDetails}</p>
                 <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '20px' }}>
                     <thead>
                         <tr style={{ backgroundColor: '#e195ea', fontWeight: 'bold' }}>
