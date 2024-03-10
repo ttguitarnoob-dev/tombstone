@@ -104,6 +104,12 @@
   font-size: 2rem;
 }
 
+.center-omg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 600px) {
   .nav-logo {
     margin-top: 0;

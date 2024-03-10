@@ -25,7 +25,7 @@ const Invoice = () => {
             const data = await response.json()
             setInvoice(data)
             console.log(data)
-        } catch(err) {
+        } catch (err) {
             console.log('something bad happened when fetching invoices', err)
         }
     }
@@ -35,7 +35,7 @@ const Invoice = () => {
     }, [])
 
     if (!invoice) {
-        return(
+        return (
             <section>
                 <CircularProgress color="secondary" label="Loading Invoice..." />
             </section>
@@ -43,7 +43,9 @@ const Invoice = () => {
     }
 
     return (
-        <>
+        <><div className="center-omg">
+            <Button className="mt-10" color="secondary" onPress={generatePDF}>Save Invoice As PDF</Button>
+            </div>
             <section className="mb-10"></section>
             <div
                 className="invoice-container"
@@ -84,7 +86,7 @@ const Invoice = () => {
                 </div>
 
                 {/* Line Item Table */}
-                        <p>Job Details: {invoice.jobDetails}</p>
+                <p>Job Details: {invoice.jobDetails}</p>
                 <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '20px' }}>
                     <thead>
                         <tr style={{ backgroundColor: '#e195ea', fontWeight: 'bold' }}>
@@ -96,9 +98,9 @@ const Invoice = () => {
                         {/* Populate with line items */}
                         {invoice.services && invoice.services.map((oneService) => (
                             <tr>
-                            <td style={{ border: '1px solid black', padding: '8px' }}>{oneService.serviceName}</td>
-                            <td style={{ border: '1px solid black', padding: '8px' }}>${oneService.price}.00</td>
-                        </tr>
+                                <td style={{ border: '1px solid black', padding: '8px' }}>{oneService.serviceName}</td>
+                                <td style={{ border: '1px solid black', padding: '8px' }}>${oneService.price}.00</td>
+                            </tr>
                         ))}
                         {/* Add more rows for additional items */}
                     </tbody>
@@ -112,10 +114,10 @@ const Invoice = () => {
 
                 {/* Footer */}
                 <div style={{ padding: '10px' }}>
-                    If you have any questions about this invoice, please reach out to Kizzi at <a style={{textDecoration: 'underline'}} href="mailto:majesticmonumentsbykizzi@yahoo.com">majesticmonumentsbykizzi@yahoo.com</a>
+                    If you have any questions about this invoice, please reach out to Kizzi at <a style={{ textDecoration: 'underline' }} href="mailto:majesticmonumentsbykizzi@yahoo.com">majesticmonumentsbykizzi@yahoo.com</a>
                 </div>
             </div>
-            <Button onPress={generatePDF}>Save Invoice As PDF</Button>
+
         </>
     );
 };
