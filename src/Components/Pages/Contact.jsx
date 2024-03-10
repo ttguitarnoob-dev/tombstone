@@ -19,7 +19,6 @@ export default function Contact() {
                     />
                 </div>
             </section>
-                <div><p>Contact: phone</p></div>
 
 
 

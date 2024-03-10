@@ -1,5 +1,7 @@
 import { Button, Input, Textarea } from "@nextui-org/react"
 import { useNavigate } from "react-router"
+import { PhoneIcon } from "./Icons/PhoneIcon"
+import { MailIcon } from "./Icons/MailIcon"
 
 export default function ContactForm() {
     const initialInput = {}
@@ -48,6 +50,10 @@ export default function ContactForm() {
         <section className="section-bg p-8 w-1/2 flex flex-col gap-4 justify-center">
             <h1>Contact Us</h1>
             <p>Hello! We'd love to hear from you. Just fill out the form below, and we'll get back to you in a snap! Request a quote or just ask a question.  You won't be placed on any lists!</p>
+            <div>
+                <Button startContent={<PhoneIcon />} ><a href="tel:7376104999">737-610-4999</a></Button>
+                <Button className="ml-6" startContent={<MailIcon />} ><a href="mailto:majesticmonumentsbykizzi@yahoo.com">majesticmonumentsbykizzi@yahoo.com</a></Button>
+            </div>
             <form onSubmit={handleSubmit}>
                 <div className="form-part flex w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-4">
                     <Input isRequired onChange={handleChange} name="name" type="text" label="Your Name" />
