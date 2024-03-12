@@ -21,11 +21,9 @@ const Invoice = () => {
         const URL = `https://api.ttguitarnoob.cloud/invoices/${id}`
         
         try {
-            console.log("fetching invoice at ", URL)
             const response = await fetch(URL)
             const data = await response.json()
             setInvoice(data)
-            console.log(data)
         } catch (err) {
             console.log('something bad happened when fetching invoices', err)
         }
@@ -36,7 +34,6 @@ const Invoice = () => {
     }, [])
     
     function paidStatus() {
-        console.log("paid function", invoice)
         if (invoice.paid) {
             return 0
         } else {
@@ -108,8 +105,8 @@ const Invoice = () => {
                     </thead>
                     <tbody>
                         {/* Populate with line items */}
-                        {invoice.services && invoice.services.map((oneService) => (
-                            <tr>
+                        {invoice.services && invoice.services.map((oneService, index) => (
+                            <tr key={index}>
                                 <td style={{ border: '1px solid black', padding: '8px' }}>{oneService.serviceName}</td>
                                 <td style={{ border: '1px solid black', padding: '8px' }}>${oneService.price}.00</td>
                             </tr>
