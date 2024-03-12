@@ -12,13 +12,14 @@ const Invoice = () => {
     function generatePDF() {
         const report = new jsPDF('portrait', 'pt', 'a4')
         report.html(document.querySelector('.invoice-container')).then(() => {
-            report.save(`Invoice - Majestic Monuments - Jack Hays Statue San Marcos - 3/10/2024`)
+            report.save(`Invoice - Majestic Monuments - ${invoice.job} - ${invoice.client}  - ${new Date(invoice.date).toLocaleDateString()}`)
         })
     }
 
+    
     async function handleFetch() {
         const URL = `https://api.ttguitarnoob.cloud/invoices/${id}`
-
+        
         try {
             console.log("fetching invoice at ", URL)
             const response = await fetch(URL)
@@ -29,18 +30,29 @@ const Invoice = () => {
             console.log('something bad happened when fetching invoices', err)
         }
     }
-
+    
     useEffect(() => {
         handleFetch()
     }, [])
+    
+    function paidStatus() {
+        console.log("paid function", invoice)
+        if (invoice.paid) {
+            return 0
+        } else {
+            return invoice.total
+        }
+    }
 
     if (!invoice) {
         return (
-            <section>
+            <section className="center-omg mt-10">
                 <CircularProgress color="secondary" label="Loading Invoice..." />
             </section>
         )
     }
+
+
 
     return (
         <><div className="center-omg">
@@ -109,7 +121,11 @@ const Invoice = () => {
                 {/* Thank you message */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px', marginBottom: '20px' }}>
                     <div>Thank you for your business!</div>
-                    <div style={{ textAlign: 'right', backgroundColor: 'lightblue', padding: '10px' }}>Total: ${invoice.total}.00</div>
+                    <div style={{ textAlign: 'right', backgroundColor: 'lightblue', padding: '10px' }}>
+                        <p>Total: ${invoice.total}.00</p>
+                        <p className="font-bold">Total Due: ${paidStatus()}.00</p>
+                        
+                        </div>
                 </div>
 
                 {/* Footer */}
