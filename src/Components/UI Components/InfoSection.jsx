@@ -1,9 +1,9 @@
 import { Image } from "@nextui-org/react"
 
-export default function InfoSection({ imgPath, bgColor, text, title, isFlipped }) {
+export default function InfoSection({ imgPath, bgColor, text, title, isFlipped, card }) {
 
     function backgroundColor() {
-        if (bgColor === 1){
+        if (bgColor === 1) {
             return "linear-gradient(310deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
         } else if (bgColor === 2) {
             return "linear-gradient(118deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
@@ -29,6 +29,9 @@ export default function InfoSection({ imgPath, bgColor, text, title, isFlipped }
                         />
 
                     </div>}
+                    {card && <div>
+                        {card}
+                    </div>}
                 </>
             )
         } else {
@@ -41,7 +44,13 @@ export default function InfoSection({ imgPath, bgColor, text, title, isFlipped }
                             width="500"
                             alt="Info Section"
                         />
+
                     </div>}
+
+                    {card && <div>
+                        {card}
+                    </div>}
+
                     <div className="text-paragraph">
                         {title && <h2 className="title font-medium text-5xl">{title}</h2>}
                         <p>{text}</p>

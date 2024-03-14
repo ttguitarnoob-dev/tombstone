@@ -4,6 +4,7 @@ import Relettering from "../../Images/Relettering.webp"
 import Photos from "../../Images/Photos.webp"
 import { Image, } from "@nextui-org/react";
 import Subscriptions from "../UI Components/Subscription";
+import Wreaths from "../UI Components/Wreaths";
 
 export default function Services() {
   
@@ -82,6 +83,14 @@ export default function Services() {
         bgColor="linear-gradient(118deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
         imgPath="https://i.etsystatic.com/10673097/r/il/4d2d65/5354555832/il_fullxfull.5354555832_acr4.jpg"
       />
+      <InfoSection
+        text="I've partnered with Wreaths By Nicole P.  She makes beautiful wreaths from your loved one's univorm. Check out her site!"
+        title="Univorm Wreaths"
+        bgColor="linear-gradient(118deg, rgba(89,58,96,1) 0%, rgba(105,86,107,1) 50%, rgba(126,96,123,1) 100%)"
+        card={<Wreaths />}
+        
+      />
+      {/* <Wreaths /> */}
       {/* <Modal placement="top-center" scrollBehavior="inside" backdrop="blur" isOpen={isOpen} onClose={onClose}>
         <ModalContent>
           {(onClose) => (
