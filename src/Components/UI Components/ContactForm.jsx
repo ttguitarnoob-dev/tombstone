@@ -2,7 +2,7 @@ import { Button, Input, Textarea, Link } from "@nextui-org/react"
 import { useNavigate } from "react-router"
 import { PhoneIcon } from "./Icons/PhoneIcon"
 import { MailIcon } from "./Icons/MailIcon"
-import { InstagramIcon } from "./Icons/InstagramIcon"
+// import { InstagramIcon } from "./Icons/InstagramIcon"
 import { TikTokIcon } from "./Icons/TikTokIcon"
 import { FacebookIcon } from "./Icons/FacebookIcon"
 
@@ -51,8 +51,7 @@ export default function ContactForm() {
 
     return (
         <section className="section-bg p-8 w-1/2 flex flex-col gap-4 justify-center">
-            <h1>Contact Us</h1>
-            <p>Hello! We'd love to hear from you. Just fill out the form below, and we'll get back to you in a snap! Request a quote or just ask a question.  You won't be placed on any lists!</p>
+            <h1 className="text-4xl font-bold">Contact Us</h1>
             <div>
 
                 <Button
@@ -60,14 +59,14 @@ export default function ContactForm() {
                     as={Link}
                     isIconOnly
                     startContent={<PhoneIcon />}
-                ></Button>
+                    ></Button>
                 <Button
                     href="mailto:majesticmonumentsbykizzi@yahoo.com"
                     as={Link}
                     isIconOnly
                     startContent={<MailIcon />}
                     className="ml-7"
-                ></Button>
+                    ></Button>
                 <Button
                     href="https://www.facebook.com/profile.php?id=61555244048458&mibextid=uzlsIk"
                     as={Link}
@@ -75,7 +74,7 @@ export default function ContactForm() {
                     isIconOnly
                     startContent={<FacebookIcon />}
                     className="ml-7"
-                ></Button>
+                    ></Button>
                 <Button
                     href="https://www.tiktok.com/@majesticmonumentsbykizzi?_t=8kiI3nQ7VAx&_r=1"
                     as={Link}
@@ -83,9 +82,11 @@ export default function ContactForm() {
                     isIconOnly
                     startContent={<TikTokIcon />}
                     className="ml-7"
-                ></Button>
+                    ></Button>
                 
             </div>
+                    <hr></hr>
+            <p>Hello! We'd love to hear from you. Just fill out the form below, and we'll get back to you in a snap! Request a quote or just ask a question.  You won't be placed on any lists!</p>
             <form onSubmit={handleSubmit}>
                 <div className="form-part flex w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-4">
                     <Input isRequired onChange={handleChange} name="name" type="text" label="Your Name" />
