@@ -1,5 +1,5 @@
 import { Button, Card, CardFooter, CardHeader, Image, Link } from "@nextui-org/react"
-import wreath from "../../Images/Cleaning.webp"
+import wreath from "../../Images/wreaths.webp"
 
 export default function Wreaths() {
 
@@ -11,9 +11,9 @@ export default function Wreaths() {
                     <p>I've partnered with Wreaths By Nicole P.  She makes beautiful wreaths from your loved one's univorm. Check out her site!</p>
                 </div> */}
                 <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
-                    <CardHeader className="absolute z-10 top-1 flex-col items-start">
+                    <CardHeader className="absolute bg-black bg-opacity-50 z-10 top-1 flex-col items-start">
                         <p className="text-tiny text-white/60 uppercase font-bold">New</p>
-                        <h4 className="text-black font-medium text-2xl">Wreaths By Nicole P</h4>
+                        <h4 className="text-white font-medium text-2xl">Wreaths By Nicole P</h4>
                     </CardHeader>
                     <Image
                         removeWrapper

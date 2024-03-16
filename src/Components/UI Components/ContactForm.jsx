@@ -2,6 +2,9 @@ import { Button, Input, Textarea, Link } from "@nextui-org/react"
 import { useNavigate } from "react-router"
 import { PhoneIcon } from "./Icons/PhoneIcon"
 import { MailIcon } from "./Icons/MailIcon"
+import { InstagramIcon } from "./Icons/InstagramIcon"
+import { TikTokIcon } from "./Icons/TikTokIcon"
+import { FacebookIcon } from "./Icons/FacebookIcon"
 
 export default function ContactForm() {
     const initialInput = {}
@@ -63,6 +66,22 @@ export default function ContactForm() {
                     as={Link}
                     isIconOnly
                     startContent={<MailIcon />}
+                    className="ml-7"
+                ></Button>
+                <Button
+                    href="https://www.facebook.com/profile.php?id=61555244048458&mibextid=uzlsIk"
+                    as={Link}
+                    target="_blank"
+                    isIconOnly
+                    startContent={<FacebookIcon />}
+                    className="ml-7"
+                ></Button>
+                <Button
+                    href="https://www.tiktok.com/@majesticmonumentsbykizzi?_t=8kiI3nQ7VAx&_r=1"
+                    as={Link}
+                    target="_blank"
+                    isIconOnly
+                    startContent={<TikTokIcon />}
                     className="ml-7"
                 ></Button>
                 
