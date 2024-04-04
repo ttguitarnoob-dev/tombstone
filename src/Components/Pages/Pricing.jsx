@@ -2,14 +2,14 @@ import InfoSection from "../UI Components/InfoSection";
 import { CircularProgress, Image } from "@nextui-org/react"
 import Subscriptions from "../UI Components/Subscription";
 import { useEffect, useState } from "react";
-import axios, { Axios } from "axios";
+import axios from "axios";
 
 export default function Pricing() {
 
     const [prices, setPrices] = useState()
 
     async function getPrices() {
-        const data = await axios.get("https://api.ttguitarnoob.cloud/prices")
+        const data = await axios.get("https://api.travisty-creations.com/prices")
         setPrices(data.data)
     }
 
