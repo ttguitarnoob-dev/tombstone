@@ -8,7 +8,7 @@ import { FacebookIcon } from "./Icons/FacebookIcon"
 
 export default function ContactForm() {
     const initialInput = {}
-    const URL = "https://api.ttguitarnoob.cloud/majestics"
+    const URL = "https://api.travisty-creations.com/majestics"
     const navigate = useNavigate()
 
     const handleChange = (e) => {
